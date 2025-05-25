@@ -1,4 +1,5 @@
 import type { Section } from '../types';
+import sanPietroImg from '../assets/san-pietro.png';
 
 export const paleocristianoContent: Section = {
   id: 'paleocristiana',
@@ -23,7 +24,7 @@ export const paleocristianoContent: Section = {
     {
       type: 'image',
       content: 'Ricostruzione della Basilica di San Pietro costantiniana',
-      imageUrl: '/assets/san-pietro.png'
+      imageUrl: sanPietroImg
     },
     {
       type: 'subtitle',
