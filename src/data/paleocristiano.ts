@@ -23,7 +23,7 @@ export const paleocristianoContent: Section = {
     {
       type: 'image',
       content: 'Ricostruzione della Basilica di San Pietro costantiniana',
-      imageUrl: 'src/assets/san-pietro.png'
+      imageUrl: '/san-pietro.png'
     },
     {
       type: 'subtitle',
