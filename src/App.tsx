@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import './styles/Map.css'
 import type { Section } from './types'
 import { paleocristianoContent } from './data/paleocristiano'
 import { bizantinoContent } from './data/bizantino'
 import { romanicoContent } from './data/romanico'
+import ArtMap from './components/ArtMap'
 
 function App() {
   const [activeSection, setActiveSection] = useState<string>('paleocristiana');
@@ -56,12 +58,24 @@ function App() {
                 {section.title}
               </li>
             ))}
+            <li 
+              key="map" 
+              className={activeSection === 'map' ? 'active' : ''}
+              onClick={() => {
+                setActiveSection('map');
+                setShowMenu(false);
+              }}
+            >
+              Mappa Interattiva
+            </li>
           </ul>
         </nav>
       </div>
 
       <main>
-        {activeContent && (
+        {activeSection === 'map' ? (
+          <ArtMap activeSection={activeSection} />
+        ) : activeContent && (
           <section className="content-section">
             <h2 className="section-title">{activeContent.title}</h2>
             <div className="content-blocks">

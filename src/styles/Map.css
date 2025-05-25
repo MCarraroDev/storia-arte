@@ -1,0 +1,80 @@
+.art-map-container {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.map-wrapper {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.legend-marker {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legend-marker.paleocristiana {
+  background-color: #ff6b6b;
+}
+
+.legend-marker.bizantina {
+  background-color: #4d96ff;
+}
+
+.legend-marker.romanica {
+  background-color: #6bcb77;
+}
+
+/* Stilizzazione delle icone dei marker */
+.marker-icon-red {
+  filter: hue-rotate(0deg) saturate(1.5);
+}
+
+.marker-icon-blue {
+  filter: hue-rotate(220deg) saturate(1.5);
+}
+
+.marker-icon-green {
+  filter: hue-rotate(100deg) saturate(1.5);
+}
+
+/* Stile per i popup */
+.leaflet-popup-content h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.leaflet-popup-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .map-wrapper {
+    height: 350px !important;
+  }
+}
