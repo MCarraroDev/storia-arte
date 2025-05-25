@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# Storia dell'Arte
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un'applicazione web interattiva che presenta una panoramica di tre importanti periodi della storia dell'arte: paleocristiana, bizantina e romanica.
 
-Currently, two official plugins are available:
+## 🔗 Link al sito
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Il sito è pubblicato su GitHub Pages e accessibile al seguente indirizzo:
 
-## Expanding the ESLint configuration
+[https://mcararrodev.github.io/storia-arte/](https://mcararrodev.github.io/storia-arte/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📋 Funzionalità
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Navigazione intuitiva tra i diversi periodi artistici
+- Presentazione dettagliata di opere e monumenti significativi
+- Interfaccia responsive adatta a dispositivi desktop e mobile
+- Galleria di immagini di opere d'arte e monumenti
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Tecnologie utilizzate
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React
+- TypeScript
+- Vite
+- CSS puro per lo styling
+- React Router per la navigazione
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🔧 Struttura del progetto
+
+Il progetto è organizzato in modo modulare:
+
+- `src/data/`: Contiene i file separati per i contenuti dei diversi periodi artistici
+  - `paleocristiano.ts`: Informazioni sull'arte paleocristiana
+  - `bizantino.ts`: Informazioni sull'arte bizantina
+  - `romanico.ts`: Informazioni sull'arte romanica
+- `src/types.ts`: Definizioni dei tipi per i contenuti
+- `src/App.tsx`: Componente principale dell'applicazione
+- `src/App.css`: Stili dell'applicazione
