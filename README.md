@@ -6,7 +6,7 @@ Un'applicazione web interattiva che presenta una panoramica di tre importanti pe
 
 Il sito è pubblicato su GitHub Pages e accessibile al seguente indirizzo:
 
-[https://mcararrodev.github.io/storia-arte/](https://mcararrodev.github.io/storia-arte/)
+[https://mcarrarodev.github.io/storia-arte/](https://mcarrarodev.github.io/storia-arte/)
 
 ## 📋 Funzionalità
 
